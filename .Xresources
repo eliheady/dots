@@ -1,0 +1,16 @@
+! disable dangerous operations
+XTerm*allowC1Printable: true
+XTerm*allowFontOps: false
+XTerm*allowTcapOps: false
+XTerm*allowTitleOps: false
+XTerm*allowSendEvents: false
+XTerm*allowWindowOps: false
+
+! dont include newline when triple click select
+XTerm*cutToBeginningOfLine: false
+! triple click select from cursor forward, not whole line
+XTerm*cutNewline: false
+
+XTerm*cursorBlink: true
+XTerm*saveLines: 10000
+XTerm*font: -*-monospace-*-*-*-*-12-*-*-*-*-*-*-*

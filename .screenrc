@@ -1,0 +1,23 @@
+
+bufferfile $HOME/.screen-exchange
+autodetach on
+
+# guard against malicious C1 char abuse
+defc1 off
+nethack off
+sorendition "kg"
+msgwait 2
+startup_message off
+altscreen on
+vbell off
+defutf8 on
+defnonblock 5
+defflow off
+bind s
+
+ignorecase on
+defscrollback 10000
+
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+hardstatus alwayslastline "%{rk}%H %{wk}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{wk}%?%+Lw %= %{ck}%Y-%m-%d %{gk}%0c"
